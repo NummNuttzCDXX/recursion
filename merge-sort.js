@@ -1,19 +1,13 @@
 // Recursion -- Merge Sort
 
-/* 
-   1. Sort left half
-   2. Sort right half
-   3. Merge 
-*/
-
 /**
- * 
+ * Sort the given numeric array from least to greatest
  * @param {Array} array - Array of Numbers
  * @return {Array} Sorted Array
  */
 function mergeSort(array) {
 	if (array.length <= 1) return array;
-	
+
 	// Sort left
 	const left = array.splice(0, array.length / 2);
 	const sort1 = mergeSort(left);
